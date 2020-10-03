@@ -8,7 +8,7 @@ function getPasswordOptions() {
   var length = prompt("How long do you want your password?");
   
   if (length < 8  || length > 128){
-    alert ("PW must be between 8 and 28 characters");
+    alert ("PW must be between 8 and 128 characters");
 
     return 
     } 
@@ -42,10 +42,10 @@ function pushChar(getPasswordOptions) {
   var passwordOptions = getPasswordOptions;
   var results = "";
 
-  if (passwordOptions.lower) {
+  if (passwordOptions.lowerLetters) {
     results += lowerLetters;
   }
-  if (passwordOptions.upper) {
+  if (passwordOptions.upperLetters) {
     results += upperLetters;
   }
   if (passwordOptions.numbers) {
