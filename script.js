@@ -1,75 +1,75 @@
 // Assignment Code
-var numbers = "0123456789".split("");
-var special = "!@#$%^&*()".split("");
-var lowerLetters = "abcdefghijklmnopqrstuvwxyz".split("");
-var upperLetters = "ABCDEFGHIJKLMNOPQURSTUVWXYZ".split("");
+var numbers = "0123456789";
+var special = "!@#$%^&*()";
+var lowerLetters = "abcdefghijklmnopqrstuvwxyz";
+var upperLetters = "ABCDEFGHIJKLMNOPQURSTUVWXYZ";
 
-function gitPasswordOptions() {
+function getPasswordOptions() {
   var length = prompt("How long do you want your password?");
+  
+  if (length < 8  || length > 128){
+    alert ("PW must be between 8 and 28 characters");
+
+    return 
+    } 
+
   var upChar = confirm("Do you want upper case letters?");
   var loChar = confirm("do you want lower case letters?");
   var spChar = confirm("Do you want special characters?");
   var numChar = confirm("Do you want numbers?");
-//add validation after variables are made (inside the gitPasswrod function need to put in a number 
-//between 8 and 128; use a number not a letter/ validation make sure they say yes to one of those options )
+  //add validation after variables are made (inside the gitPassword function need to put in a number 
+  //between 8 and 128; use a number not a letter/ validation make sure they say yes to one of those options )
 
-var passwordOptions = {
-  length:length,
-  upper:upChar,
-  lower:loChar, 
-  numbers:numChar, 
-  special:spChar
+  var passwordOptions = {
+    length: length,
+    upperLetters: upChar,
+    lowerLetters: loChar,
+    numbers: numChar,
+    special: spChar
+  }
+
+  return passwordOptions;
+
 }
 
-return passwordOptions;
-
-}
-
-function gitRandom(arr) {
+function getRandom(arr) {
   var randIndex = Math.floor(Math.random() * arr.length);
   var randElement = arr[randIndex];
   return randElement;
 
 }
-
-function generatePassword() {
-  var result = []
-  //final password 
-  var possibleChar = []
-  // function pushChar(){
-
-  //holds all possible types of characters the user said yes too
-  // var guaranteedChar = []
-  var passwordOptions = gitPasswordOptions();
-  function pushChar() {
+function pushChar(getPasswordOptions) {
+  var passwordOptions = getPasswordOptions;
+  var results = "";
 
   if (passwordOptions.lower) {
-    passwordOptions = passwordOptions.concat(lowerLetters);
-    passwordOptions.push(gitRandom(lowerLetters));
+    results += lowerLetters;
   }
-
   if (passwordOptions.upper) {
-    passwordOptions = passwordOptions.concat(upperLetters);
-    passwordOptions.push(gitRandom(upperLetters));
+    results += upperLetters;
   }
   if (passwordOptions.numbers) {
-    passwordOptions = passwordOptions.concat(numbers);
-    passwordOptions.push(gitRandom(numbers)); 
+    results += numbers;
   }
   if (passwordOptions.special) {
-    passwordOptions = passwordOptions.concat(special);
-    passwordOptions.push(gitRandom(special)); 
+   results += special;
   }
-  return possibleChar;
-  } 
 
-    
-    // 1 loop to loop through the possibleChar array and push to the result array (options.length) number of times. 
-    // last loop run through the guarantee array and those characters overwrite the characters in teh result array
-    // return result. 
+  return results;
 }
 
+function generatePassword() {
+  var result = "";
+  var possibleChar = getPasswordOptions();
+  var guaranteedChar = pushChar(possibleChar);
 
+  
+
+  for (let i = 0, len = possibleChar.length, text = ""; i < len; i++) {
+    result += getRandom (guaranteedChar);
+  }
+
+return result} 
 
 var generateBtn = document.querySelector("#generate");
 
@@ -84,3 +84,5 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
