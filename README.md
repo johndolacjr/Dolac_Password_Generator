@@ -1,7 +1,3 @@
-
-
-
-
 ## Title of app
      Dolac_Password_Generator
 
