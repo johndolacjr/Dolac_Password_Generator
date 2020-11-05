@@ -17,6 +17,8 @@
     NOTE - You will be prompted to enter UPPER CASE LETTERS, LOWER CASE LETTERS, SPECIAL CHARACTERS, and/or NUMBERS 
     COMPLETION - Once all answers are chosen, you will receive an secure auto generated password
 
+## Image Link: 
+     https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Generated_IMG.png
 
 ## 2-3 Screenshots / gifs of the app
     See GitHub Repo Link: https://github.com/johndolacjr/Dolac_Password_Generator.git
