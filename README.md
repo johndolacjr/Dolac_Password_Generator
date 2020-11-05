@@ -23,7 +23,7 @@
 ## 2-3 Screenshots / gifs of the app
     See GitHub Repo Link: https://github.com/johndolacjr/Dolac_Password_Generator.git
 
-## License (usually MIT)
+## License
 
 ## Contact information for you and any collaborators
     Name: John Dolac
