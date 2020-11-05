@@ -17,13 +17,18 @@
     NOTE - You will be prompted to enter UPPER CASE LETTERS, LOWER CASE LETTERS, SPECIAL CHARACTERS, and/or NUMBERS 
     COMPLETION - Once all answers are chosen, you will receive an secure auto generated password
 
-## Image Link: 
-     https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Generated_IMG.png
-
 ## 2-3 Screenshots / gifs of the app
     See GitHub Repo Link: https://github.com/johndolacjr/Dolac_Password_Generator.git
+    https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Gen_Step_1_IMG.png
+    https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Gen_Step_2_IMG.png
+    https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Gen_Step_3_IMG.png
+    https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Gen_Step_4_IMG.png
+    https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Gen_Step_5_IMG.png
+    https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Gen_Step_6_IMG.png
+    https://raw.githubusercontent.com/johndolacjr/Dolac_Password_Generator/master/PW_Generated_IMG.png
 
 ## License
+     NA
 
 ## Contact information for you and any collaborators
     Name: John Dolac
